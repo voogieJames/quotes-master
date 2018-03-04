@@ -1,4 +1,5 @@
 /* Photo by Juan from Pexels https://www.pexels.com/photo/photography-of-night-sky-733475/ */
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i');
 html, body {
   margin: 0;
   padding: 0;
@@ -19,20 +20,13 @@ body {
  -moz-background-size: cover;
  -o-background-size: cover;
  display: block;
- font-size: 1.4em;
+ font-size: 18px;
+ font-family: 'Vollkorn', Times, serif;
  letter-spacing: 2px;
 }
 
 .container {
   position: absolute;
-  display: flex;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
-  display: -webkit-flex;     /* NEW - Chrome */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   left: 0;
   right: 0;
   min-width: 100%;
@@ -42,13 +36,21 @@ body {
   text-align: center;
 }
 
-.row:first-child {
+.row {
+  position: absolute;
   min-width: 100%;
-  margin-bottom: 2em;
+}
+
+.row:first-child {
+  top: 32%;  
+}
+
+.row:nth-child(2) {
+  top: 40%;
 }
 
 .row:last-child {
-  margin-top: 3.2em; 
+  bottom: 28%;
 }
 
 .action-btn {
@@ -84,13 +86,13 @@ body {
 }
 
 #quote {
-    font-size: 1.3em;
+    font-size: 1.8em;
     padding: 8px 0;
  }
  
  #author {
-    display: hide;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: 100;
     font-style: italic;
     padding-bottom: 10px;
  } 

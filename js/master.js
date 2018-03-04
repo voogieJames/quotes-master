@@ -27,7 +27,6 @@ function _setListeners() {
 
 function _fetchQuote() {
 	// random value generator
-	debugger
 	var randomNumber = Math.floor(Math.random() * quotes.length);
 	randomQuote = quotes[randomNumber].quote;
 	randomAuthor = quotes[randomNumber].author;
